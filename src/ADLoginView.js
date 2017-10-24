@@ -78,7 +78,6 @@ export default class ADLoginView extends React.Component {
   render() {
     // Fix visibility problem on Android webview
     let js = `document.getElementsByTagName('body')[0].style.height = '${Dimensions.get('window').height}px';`
-
     return (
         this.state.visible ? (<WebView
           ref="ADLoginView"
